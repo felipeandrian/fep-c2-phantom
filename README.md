@@ -77,7 +77,7 @@ sequenceDiagram
         end
         Agente->>Firewall: UDP 53 [Query: google.com]
     end
-````
+```
 
 -----
 
@@ -91,7 +91,7 @@ sequenceDiagram
 ### Clonar o Repositório
 
 ```bash
-git clone [https://github.com/felipeandrian/fep-c2-phantom.git](https://github.com/felipeandrian/fep-c2-phantom.git)
+git clone https://github.com/felipeandrian/fep-c2-phantom.git
 cd fep-c2-phantom
 ```
 
