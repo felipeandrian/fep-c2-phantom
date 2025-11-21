@@ -53,15 +53,15 @@ Para evitar a deteção por EDRs (Endpoint Detection & Response):
 
 ```mermaid
 sequenceDiagram
-    participant Hacker (C2)
-    participant Firewall (NGFW)
-    participant Agente (Vítima)
+    participant Hacker as Hacker (C2)
+    participant Firewall as Firewall (NGFW)
+    participant Agente as Agente (Vítima)
 
     Note over Hacker, Agente: FASE 1: INJEÇÃO (ICMP)
-    Hacker->>Firewall: Echo Req [Payload: "FEP:whoami" camuflado no padrão Linux]
+    Hacker->>Firewall: Echo Req [Payload: "FEP:whoami" camuflado]
     Firewall->>Agente: Encaminha (Parece Ping normal)
     Agente->>Firewall: Echo Reply [Fake Response imediato]
-    Firewall->>Hacker: Encaminha (Sessão Fechada no State Table)
+    Firewall->>Hacker: Encaminha (Sessão Fechada)
     
     Note over Agente: Execução Silenciosa (Native API)
     
