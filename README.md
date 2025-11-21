@@ -10,6 +10,12 @@
 > **⚠️ Disclaimer (Aviso Legal):**
 > Este software é uma **Prova de Conceito (PoC)** desenvolvida estritamente para fins de pesquisa acadêmica em segurança ofensiva, engenharia de redes e análise forense. O autor não encoraja, sanciona ou apoia o uso desta ferramenta para acesso não autorizado a sistemas. O utilizador assume total responsabilidade legal pelas suas ações.
 
+
+![Hacker View](assets/hacker_view.png)
+*Vista do Atacante: Envio de comando e receção via Timing Channel.*
+
+![Agent View](assets/agente_view.png)
+*Vista da Vítima: Execução silenciosa e evasão de firewall.*
 ---
 
 ## Visão Geral
