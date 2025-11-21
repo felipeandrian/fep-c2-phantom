@@ -1,6 +1,4 @@
 
-
-````markdown
 # 👻 FEP C2 PHANTOM
 ### Advanced Hybrid Covert Channel (ICMP Steganography & DNS Timing)
 
@@ -120,7 +118,7 @@ sudo python3 hybrid_phantom_final.py
 
 Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*) em comparação com o PoC:
 
-# 1. Limitações do Python e Dependência de Interpretadores
+### 1. Limitações do Python e Dependência de Interpretadores
 **Contexto:** Python é excelente para prototipagem, mas em ambientes monitorados apresenta limitações significativas.  
 - **Desempenho:** Mais lento e deixa artefatos em memória.  
 - **Dependências:** Requer interpretador volumoso.  
@@ -130,7 +128,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# 2. Infraestrutura e Não-Atribuição
+### 2. Infraestrutura e Não-Atribuição
 **PoC:** Conexões diretas a servidores de controle expõem o operador.  
 **Versão avançada:** Uso de redirecionadores descartáveis e técnicas como *domain fronting*, criando camadas de comunicação que dificultam a atribuição e permitem substituir rapidamente componentes comprometidos.  
 
@@ -141,7 +139,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# 3. Protocolos e Conformidade RFC
+### 3. Protocolos e Conformidade RFC
 **PoC:** Pacotes artificiais (DNS falso, ICMP customizado) são facilmente detectados por inspeção profunda.  
 **Versão avançada:** Tráfego mimetizado bit a bit com comunicações legítimas, como consultas DNS reais ou perfis HTTPS maleáveis, tornando a detecção estatística muito mais difícil.  
 
@@ -150,7 +148,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 - **HTTPS camuflado:** perfis maleáveis que imitam tráfego de serviços legítimos (ex.: Windows Update).  
 ---
 
-# 4. Camada de Execução Avançada: Implantes Position Independent  
+### 4. Camada de Execução Avançada: Implantes Position Independent  
 
 **Limitação em PoCs:** Scripts (`.py`) ou binários estáticos (`.exe`) dependem do carregador do sistema operacional, gerando eventos de criação de processo e carregando DLLs monitoradas.  
 
@@ -162,7 +160,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# 5. Evasão de EDR e Antivírus  
+### 5. Evasão de EDR e Antivírus  
 
 **Limitação em PoCs:** Bibliotecas padrão (ex.: `socket`, `subprocess`) chamam APIs monitoradas por EDRs modernos.  
 
@@ -173,7 +171,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# 6. Ocultação em Memória  
+### 6. Ocultação em Memória  
 
 **Limitação em PoCs:** Código permanece em memória em texto claro, sujeito a dumps e regras YARA.  
 
@@ -183,7 +181,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# 7. Comunicação em Rede: Perfis Maleáveis  
+### 7. Comunicação em Rede: Perfis Maleáveis  
 
 **Limitação em PoCs:** Tráfego ICMP/DNS com padrões fixos é facilmente detectável.  
 
@@ -195,7 +193,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# 8. Infraestrutura Inteligente  
+### 8. Infraestrutura Inteligente  
 
 **Limitação em PoCs:** Expor diretamente o IP do C2 facilita bloqueio e atribuição.  
 
@@ -206,7 +204,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# Resumo da Transformação  
+### Resumo da Transformação  
 
 | Componente | PoC (Acadêmico) | Versão Avançada |
 |------------|-----------------|-----------------|
@@ -219,7 +217,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# 9. Execução Avançada em Windows e Linux  
+### 9. Execução Avançada em Windows e Linux  
 
 **Windows:**  
 - Reescrita em C/Assembly como **Position Independent Code (PIC)**.  
@@ -233,7 +231,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# 10. Evasão de Monitoramento  
+### 10. Evasão de Monitoramento  
 
 **Windows:**  
 - Uso de **Direct Syscalls**, contornando hooks em DLLs como `ntdll.dll`.  
@@ -245,7 +243,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# 11. Comunicação em Rede e Mimetização  
+### 11. Comunicação em Rede e Mimetização  
 
 **Windows:**  
 - Uso de APIs nativas (`IcmpSendEcho2`, `DnsQuery_A`) para gerar tráfego indistinguível de comunicações legítimas.  
@@ -257,7 +255,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# 12. Ocultação em Memória: Sleep Encryption  
+### 12. Ocultação em Memória: Sleep Encryption  
 
 **PoC:** Scripts em Python permanecem em memória em texto claro, facilmente identificável.  
 
@@ -268,7 +266,7 @@ Este projeto é uma implementação acadêmica. Uma versão armada (*weaponized*
 
 ---
 
-# 13. Comparação Estrutural  
+### 13. Comparação Estrutural  
 
 | Vetor        | PoC (Acadêmico) | Versão Avançada (Windows) | Versão Avançada (Linux) |
 |--------------|-----------------|---------------------------|-------------------------|
