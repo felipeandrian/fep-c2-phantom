@@ -11,11 +11,17 @@
 > Este software é uma **Prova de Conceito (PoC)** desenvolvida estritamente para fins de pesquisa acadêmica em segurança ofensiva, engenharia de redes e análise forense. O autor não encoraja, sanciona ou apoia o uso desta ferramenta para acesso não autorizado a sistemas. O utilizador assume total responsabilidade legal pelas suas ações.
 
 
-![Hacker View](assets/hacker_view.png)
-*Vista do Atacante: Envio de comando e receção via Timing Channel.*
+<p align="center">
+  <img src="assets/hacker_view.png" width="800" alt="Hacker Terminal">
+  <br>
+  <em>Terminal do Controlador (C2) recebendo dados via Timing Channel</em>
+</p>
 
-![Agent View](assets/agente_view.png)
-*Vista da Vítima: Execução silenciosa e evasão de firewall.*
+<p align="center">
+  <img src="assets/agent_view.png" width="800" alt="Agent Terminal">
+  <br>
+  <em>Terminal do Agente a executar o Fake Reply e o Jitter</em>
+</p>
 ---
 
 ## Visão Geral
