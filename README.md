@@ -12,17 +12,17 @@
 
 
 <p align="center">
-  <img src="assets/hacker_view.png" width="800" alt="Hacker Terminal">
+  <img src="assets/hacker_view.png" width="400" alt="Hacker Terminal">
   <br>
   <em>Terminal do Controlador (C2) recebendo dados via Timing Channel</em>
 </p>
 
 <p align="center">
-  <img src="assets/agent_view.png" width="800" alt="Agent Terminal">
+  <img src="assets/agent_view.png" width="400" alt="Agent Terminal">
   <br>
   <em>Terminal do Agente a executar o Fake Reply e o Jitter</em>
 </p>
----
+
 
 ## Visão Geral
 
